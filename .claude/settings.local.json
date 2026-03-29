@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs cat:*)",
+      "Bash(cd /mnt/c/Users/awkwa/Documents/Cursor/A\\\\ Client\\\\ Portfolio/DrStephanie/thisisdrstephanie && npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}

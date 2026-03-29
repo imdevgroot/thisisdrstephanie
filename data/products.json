@@ -1,0 +1,29 @@
+{
+  "additionalResources": [
+    {
+      "id": "finally-good-enough",
+      "name": "Finally Good Enough",
+      "description": "Overcoming Lifelong Disappointments in Relationships Through Self-Acceptance. A transformative book that delves into the heart of human connections.",
+      "price": 16.99,
+      "type": "Book",
+      "stripeProductId": null,
+      "externalLink": "https://www.xlibris.com/en/bookstore/bookdetails/853145-finally-good-enough"
+    },
+    {
+      "id": "brave-devotional",
+      "name": "BRAVE Devotional",
+      "description": "31 days of Scripture and reflection to deepen your journey.",
+      "price": 27,
+      "type": "Digital Download",
+      "stripeProductId": null
+    },
+    {
+      "id": "coaching-session",
+      "name": "1-on-1 Coaching Session",
+      "description": "A private 60-minute session with Dr. Stephanie.",
+      "price": 197,
+      "type": "Coaching",
+      "stripeProductId": null
+    }
+  ]
+}

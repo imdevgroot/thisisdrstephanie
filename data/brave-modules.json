@@ -1,0 +1,112 @@
+{
+  "modules": [
+    {
+      "id": "believe",
+      "letter": "B",
+      "title": "Believe",
+      "subtitle": "Know Who You Are",
+      "description": "Anchor your identity in Christ and embrace who He created you to be. Discover the lies you've believed and replace them with God's truth about your worth and calling.",
+      "topics": [
+        "Understanding your identity in Christ",
+        "Breaking free from comparison",
+        "Embracing your unique design",
+        "Building unshakeable confidence"
+      ],
+      "price": 67
+    },
+    {
+      "id": "release",
+      "letter": "R",
+      "title": "Release",
+      "subtitle": "Let Go of What Holds You Back",
+      "description": "Let go of fear, doubt, past hurts, and limiting beliefs that hold you back from your calling. Experience the freedom of surrender and forgiveness.",
+      "topics": [
+        "Identifying fear patterns",
+        "Processing past wounds",
+        "Practicing forgiveness",
+        "Releasing control to God"
+      ],
+      "price": 67
+    },
+    {
+      "id": "activate",
+      "letter": "A",
+      "title": "Activate",
+      "subtitle": "Step Into Action",
+      "description": "Step into action with confidence, using your unique gifts for God's glory. Learn to take bold steps even when you don't have all the answers.",
+      "topics": [
+        "Discovering your spiritual gifts",
+        "Taking imperfect action",
+        "Building holy habits",
+        "Creating momentum"
+      ],
+      "price": 67
+    },
+    {
+      "id": "visualize",
+      "letter": "V",
+      "title": "Visualize",
+      "subtitle": "See God's Vision",
+      "description": "See the life God has planned for you and align your steps with His vision. Dream with God and create a roadmap for your purpose.",
+      "topics": [
+        "Casting vision with God",
+        "Setting faith-filled goals",
+        "Creating action plans",
+        "Overcoming obstacles"
+      ],
+      "price": 67
+    },
+    {
+      "id": "endure",
+      "letter": "E",
+      "title": "Endure",
+      "subtitle": "Finish Strong",
+      "description": "Build resilience and perseverance to finish the race set before you. Develop the grit and grace needed for the long journey.",
+      "topics": [
+        "Building spiritual resilience",
+        "Navigating setbacks",
+        "Finding joy in the journey",
+        "Creating lasting change"
+      ],
+      "price": 67
+    }
+  ],
+  "completeSeries": {
+    "id": "brave-complete",
+    "name": "The Complete BRAVE Series",
+    "description": "Get all 5 modules plus bonus content in one comprehensive package. This is the full transformation experience.",
+    "price": 297,
+    "originalPrice": 397,
+    "features": [
+      "All 5 video modules (10+ hours)",
+      "Complete workbook & journal",
+      "Private community access",
+      "Monthly group coaching calls",
+      "Bonus: Prayer & Affirmation cards",
+      "Lifetime access"
+    ],
+    "badge": "Best Value"
+  },
+  "includes": [
+    {
+      "icon": "Video",
+      "title": "5 Video Modules",
+      "description": "In-depth teaching sessions with practical application"
+    },
+    {
+      "icon": "BookOpen",
+      "title": "Workbook & Exercises",
+      "description": "Reflection prompts and actionable exercises for each module"
+    },
+    {
+      "icon": "Users",
+      "title": "Community Access",
+      "description": "Join a private community of like-minded women"
+    },
+    {
+      "icon": "Clock",
+      "title": "Lifetime Access",
+      "description": "Return to the content whenever you need a refresh"
+    }
+  ]
+}

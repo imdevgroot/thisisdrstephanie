@@ -1,0 +1,57 @@
+{
+  "site": {
+    "name": "This Is Dr. Stephanie",
+    "tagline": "Christian Life Coach, Expert & Author",
+    "description": "Empowering women to live boldly through faith-centered coaching, the BRAVE Series, and transformational resources.",
+    "url": "https://thisisdrstephanie.com"
+  },
+  "author": {
+    "name": "Dr. Stephanie Clark Rhoe",
+    "credentials": "PhD, MSW",
+    "title": "Christian Life Coach, Expert & Author",
+    "shortBio": "A woman of many passions and talents, with an incredible journey spanning over thirty years in governmental forensic mental health, clinical therapy, and the mental health fields."
+  },
+  "contact": {
+    "email": "Stephanie@ThisIsDrStephanie.com",
+    "phone": "909-213-2530",
+    "location": "Southern California",
+    "responseTime": "Within 24-48 hours"
+  },
+  "social": {
+    "instagram": "https://instagram.com/thisisdrstephanie",
+    "facebook": "https://facebook.com/thisisdrstephanie",
+    "youtube": "https://youtube.com/@thisisdrstephanie"
+  },
+  "expertise": [
+    {
+      "title": "Mental Health Advocacy",
+      "description": "Dr. Stephanie is a passionate advocate for mental health awareness and destigmatization. Her expertise in fostering positive mental well-being has been instrumental in driving impactful societal change."
+    },
+    {
+      "title": "Social & Emotional Skills Development",
+      "description": "With a comprehensive understanding of the complexities surrounding social and emotional skills, Dr. Stephanie has been actively involved in developing effective strategies and programs to nurture these essential skills in individuals of all ages."
+    },
+    {
+      "title": "Forensic Mental Health",
+      "description": "Drawing from her extensive background in forensic mental health, Dr. Stephanie has been a driving force in advocating for the rights and well-being of individuals entangled in complex mental health and legal intersections."
+    }
+  ],
+  "credentials": [
+    {
+      "title": "PhD",
+      "description": "Public Policy & Administration"
+    },
+    {
+      "title": "MSW",
+      "description": "Master of Social Work"
+    },
+    {
+      "title": "SEL Expert",
+      "description": "Social Emotional Learning Specialist"
+    },
+    {
+      "title": "Published Author",
+      "description": "Author & Bible Counselor"
+    }
+  ]
+}

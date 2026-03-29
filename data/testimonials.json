@@ -1,0 +1,42 @@
+{
+  "brave": [
+    {
+      "id": "1",
+      "quote": "Module 2 (Release) was life-changing. I finally let go of pain I'd been carrying for decades.",
+      "author": "Rachel K.",
+      "module": "release"
+    },
+    {
+      "id": "2",
+      "quote": "The BRAVE Series gave me a framework for pursuing my dreams with confidence.",
+      "author": "Lisa M.",
+      "module": null
+    },
+    {
+      "id": "3",
+      "quote": "I've done many programs, but this one actually led to lasting transformation.",
+      "author": "Patricia H.",
+      "module": null
+    }
+  ],
+  "general": [
+    {
+      "id": "4",
+      "quote": "Dr. Stephanie's guidance helped me discover my true purpose and walk boldly in my faith.",
+      "author": "Jennifer T.",
+      "role": "Business Owner"
+    },
+    {
+      "id": "5",
+      "quote": "The way she combines biblical truth with practical wisdom is truly remarkable.",
+      "author": "Maria S.",
+      "role": "Ministry Leader"
+    },
+    {
+      "id": "6",
+      "quote": "Working with Dr. Stephanie was the breakthrough I needed. Her coaching is life-changing.",
+      "author": "Angela R.",
+      "role": "Nonprofit Director"
+    }
+  ]
+}
