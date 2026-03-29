@@ -1,4 +1,4 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
@@ -37,24 +37,20 @@ const modules = [
 
 export function BraveHighlight() {
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section className="py-20 lg:py-28 bg-background relative overflow-hidden">
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Header section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-end mb-16">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
-            <span className="inline-block w-12 h-1 bg-primary rounded-full mb-6" />
+            <span className="inline-block w-10 h-1 bg-primary rounded-full mb-5" />
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground leading-tight">
-              The{" "}
-              <span className="text-primary">BRAVE</span>
-              {" "}Series
+              The <span className="text-primary">BRAVE</span> Series
             </h2>
-            <p className="mt-6 text-muted-foreground text-lg max-w-xl">
+            <p className="mt-4 text-muted-foreground text-lg max-w-xl">
               A transformational 5-module journey designed to help you break free from fear
               and step boldly into your God-given purpose.
             </p>
           </div>
-
-          <div className="lg:text-right">
+          <div className="shrink-0">
             <Button asChild size="lg" className="group bg-primary hover:bg-primary/90">
               <Link href="/brave">
                 Explore Full Program
@@ -64,71 +60,46 @@ export function BraveHighlight() {
           </div>
         </div>
 
-        {/* Modules - Grid on all sizes */}
-        <div className="relative">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
-            {modules.map((module, index) => (
-              <div
-                key={module.letter}
-                className="group"
-              >
-                <div className="bg-card rounded-2xl md:rounded-3xl p-5 md:p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 h-full">
-                  {/* Module number and letter */}
-                  <div className="flex items-center justify-between mb-4 md:mb-6">
-                    <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
-                      Module {index + 1}
-                    </span>
-                    <div className={`w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-gradient-to-br ${module.color} flex items-center justify-center shadow-lg`}>
-                      <span className="font-serif text-lg md:text-xl font-bold text-white">
-                        {module.letter}
-                      </span>
-                    </div>
-                  </div>
-
-                  <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-2 md:mb-3">
-                    {module.title}
-                  </h3>
-
-                  <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
-                    {module.description}
-                  </p>
-
-                  {/* Progress indicator */}
-                  <div className="mt-6 pt-4 border-t border-border/50">
-                    <div className="flex items-center justify-between text-xs text-muted-foreground">
-                      <span>Video + Workbook</span>
-                      <span className="w-6 h-6 rounded-full bg-accent flex items-center justify-center">
-                        <svg className="w-3 h-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {modules.map((module, index) => (
+            <div key={module.letter} className="bg-card rounded-2xl p-5 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-md hover:-translate-y-1 flex flex-col">
+              <div className="flex items-center justify-between mb-5">
+                <span className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
+                  Module {index + 1}
+                </span>
+                <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${module.color} flex items-center justify-center shadow-md`}>
+                  <span className="font-serif text-lg font-bold text-white">{module.letter}</span>
                 </div>
               </div>
-            ))}
-          </div>
+              <h3 className="font-serif text-xl font-semibold text-foreground mb-2">{module.title}</h3>
+              <p className="text-muted-foreground text-xs leading-relaxed flex-1">{module.description}</p>
+              <div className="mt-5 pt-4 border-t border-border/50">
+                <div className="flex items-center justify-between text-xs text-muted-foreground">
+                  <span>Video + Workbook</span>
+                  <span className="w-5 h-5 rounded-full bg-accent flex items-center justify-center">
+                    <svg className="w-2.5 h-2.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* Bottom stats */}
-        <div className="mt-16 pt-8 border-t border-border">
+        <div className="mt-12 pt-8 border-t border-border">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <span className="font-serif text-3xl font-bold text-foreground">5</span>
-              <p className="text-sm text-muted-foreground mt-1">In-Depth Modules</p>
-            </div>
-            <div className="text-center">
-              <span className="font-serif text-3xl font-bold text-foreground">10+</span>
-              <p className="text-sm text-muted-foreground mt-1">Hours of Content</p>
-            </div>
-            <div className="text-center">
-              <span className="font-serif text-3xl font-bold text-foreground">50+</span>
-              <p className="text-sm text-muted-foreground mt-1">Practical Exercises</p>
-            </div>
-            <div className="text-center">
-              <span className="font-serif text-3xl font-bold text-foreground">Lifetime</span>
-              <p className="text-sm text-muted-foreground mt-1">Access Included</p>
-            </div>
+            {[
+              { stat: "5", label: "In-Depth Modules" },
+              { stat: "10+", label: "Hours of Content" },
+              { stat: "50+", label: "Practical Exercises" },
+              { stat: "Lifetime", label: "Access Included" },
+            ].map(({ stat, label }) => (
+              <div key={label} className="text-center">
+                <span className="font-serif text-3xl font-bold text-foreground">{stat}</span>
+                <p className="text-sm text-muted-foreground mt-1">{label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
