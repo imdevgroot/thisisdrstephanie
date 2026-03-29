@@ -1,16 +1,29 @@
-import Link from "next/link"
+﻿import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles } from "lucide-react"
 
 export function Hero() {
   return (
     <section className="relative pt-32 pb-8 lg:pt-40 lg:pb-12 overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/30 via-background to-background" />
+      {/* Hero background image with transparent overlay */}
+      <div className="absolute inset-0">
+        <Image
+          src="/hero-flowers.png"
+          alt="Soft pink peonies"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* White wash overlay for readability */}
+        <div className="absolute inset-0 bg-white/70" />
+        {/* Gradient fade at bottom */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/80" />
+      </div>
 
       {/* Floating decorative shapes - hidden on mobile to prevent overflow */}
       <div className="hidden md:block absolute top-32 right-[15%] w-72 h-72 bg-primary/5 rounded-full opacity-60" />
-      <div className="hidden md:block absolute bottom-32 left-[10%] w-48 h-48 bg-accent/50 rounded-full" />
+      <div className="hidden md:block absolute bottom-32 left-[10%] w-48 h-48 bg-accent/30 rounded-full" />
       <div className="hidden md:block absolute top-1/2 right-[8%] w-24 h-24 border-2 border-primary/20 rounded-full" />
 
       <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-8 lg:pt-32 lg:pb-16 lg:px-8">
@@ -58,7 +71,7 @@ export function Hero() {
           <div className="hidden lg:block relative">
             <div className="relative h-[500px]">
               {/* Main stat card */}
-              <div className="absolute top-0 right-0 w-64 bg-card p-8 rounded-3xl shadow-xl border border-border/50">
+              <div className="absolute top-0 right-0 w-64 bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-border/50">
                 <span className="font-serif text-5xl font-bold text-primary">500+</span>
                 <p className="mt-2 text-muted-foreground">Lives transformed through faith-centered coaching</p>
               </div>
@@ -70,7 +83,7 @@ export function Hero() {
               </div>
 
               {/* Tertiary card */}
-              <div className="absolute bottom-16 right-8 w-48 bg-card p-6 rounded-2xl shadow-lg border border-border/50">
+              <div className="absolute bottom-16 right-8 w-48 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-border/50">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <span className="font-serif text-lg font-bold text-primary">PhD</span>
@@ -83,14 +96,14 @@ export function Hero() {
               </div>
 
               {/* Decorative accent */}
-              <div className="absolute bottom-0 right-48 w-20 h-20 bg-accent rounded-full" />
+              <div className="absolute bottom-0 right-48 w-20 h-20 bg-accent/60 rounded-full" />
             </div>
           </div>
         </div>
 
         {/* Mobile stats - grid layout */}
         <div className="lg:hidden mt-10 grid grid-cols-3 gap-3">
-          <div className="bg-card p-4 rounded-2xl shadow-md border border-border/50 text-center">
+          <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-md border border-border/50 text-center">
             <span className="font-serif text-2xl font-bold text-primary">500+</span>
             <p className="mt-1 text-xs text-muted-foreground">Lives Transformed</p>
           </div>
@@ -98,7 +111,7 @@ export function Hero() {
             <span className="font-serif text-2xl font-bold">30+</span>
             <p className="mt-1 text-xs text-primary-foreground/80">Years Experience</p>
           </div>
-          <div className="bg-card p-4 rounded-2xl shadow-md border border-border/50 text-center">
+          <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-md border border-border/50 text-center">
             <span className="font-serif text-2xl font-bold text-primary">PhD</span>
             <p className="mt-1 text-xs text-muted-foreground">Certified Expert</p>
           </div>
