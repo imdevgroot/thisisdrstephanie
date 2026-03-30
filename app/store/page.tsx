@@ -1,4 +1,4 @@
-import { Suspense } from "react"
+﻿import { Suspense } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -51,7 +51,7 @@ export default function StorePage() {
           <div className="hidden md:block absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
           <div className="hidden md:block absolute bottom-0 left-0 w-72 h-72 bg-accent rounded-full blur-2xl -translate-x-1/3 translate-y-1/3" />
 
-          <div className="relative mx-auto max-w-7xl px-6 lg:px-8 py-32">
+          <div className="relative w-full mx-auto max-w-7xl px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-20">
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-8">
                 <ShoppingBag className="h-4 w-4" />
@@ -70,7 +70,7 @@ export default function StorePage() {
         </section>
 
         {/* Featured Product */}
-        <section className="py-24 bg-card relative overflow-hidden">
+        <section className="py-20 lg:py-28 bg-card relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent" />
 
           <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
@@ -147,9 +147,9 @@ export default function StorePage() {
         </section>
 
         {/* Individual Modules */}
-        <section className="py-24 bg-background">
+        <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="max-w-2xl mb-16">
+            <div className="max-w-2xl mb-12">
               <span className="inline-block w-12 h-1 bg-primary rounded-full mb-6" />
               <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-foreground">
                 Individual <span className="text-primary">Modules</span>
@@ -159,11 +159,11 @@ export default function StorePage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
               {products.map((product) => (
                 <div
                   key={product.name}
-                  className="group bg-card rounded-3xl p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col"
+                  className="group bg-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col"
                 >
                   <div className="flex items-start justify-between mb-6">
                     <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${product.color} flex items-center justify-center shadow-lg`}>
@@ -205,9 +205,9 @@ export default function StorePage() {
         </section>
 
         {/* Additional Resources */}
-        <section className="py-24 bg-gradient-to-b from-accent/30 to-background">
+        <section className="py-20 lg:py-28 bg-gradient-to-b from-accent/30 to-background">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="max-w-2xl mb-16">
+            <div className="max-w-2xl mb-12">
               <span className="inline-block w-12 h-1 bg-primary rounded-full mb-6" />
               <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-foreground">
                 Additional <span className="text-primary">Resources</span>
@@ -221,7 +221,7 @@ export default function StorePage() {
               {additionalResources.map((resource) => (
                 <div
                   key={resource.name}
-                  className="bg-card rounded-3xl p-8 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
+                  className="bg-card rounded-2xl p-7 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-md"
                 >
                   <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-4">
                     {resource.type}
@@ -267,7 +267,7 @@ export default function StorePage() {
         </section>
 
         {/* Trust Section */}
-        <section className="py-16 bg-card border-t border-border">
+        <section className="py-12 bg-card border-t border-border">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid grid-cols-2 md:flex md:flex-wrap items-center justify-center gap-4 md:gap-8 lg:gap-16">
               <div className="flex items-center gap-2 md:gap-3 col-span-2 justify-center md:justify-start">
@@ -301,3 +301,4 @@ export default function StorePage() {
     </>
   )
 }
+

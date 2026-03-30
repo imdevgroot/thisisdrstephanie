@@ -1,4 +1,4 @@
-const testimonials = [
+﻿const testimonials = [
   {
     quote: "The BRAVE Series completely transformed my perspective. I went from paralyzed by fear to confidently pursuing my calling. Dr. Stephanie's guidance is truly anointed.",
     author: "Jennifer M.",
@@ -21,7 +21,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 bg-gradient-to-b from-accent/30 to-background relative overflow-hidden">
+    <section className="py-20 lg:py-28 bg-gradient-to-b from-accent/30 to-background relative overflow-hidden">
       {/* Decorative quote mark - hidden on mobile, smaller on tablet */}
       <div className="hidden md:block absolute top-20 left-10 font-serif text-[10rem] lg:text-[20rem] text-primary/[0.03] leading-none select-none">
         "
@@ -29,7 +29,7 @@ export function Testimonials() {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header - left aligned */}
-        <div className="max-w-2xl mb-16">
+        <div className="max-w-2xl mb-12">
           <span className="inline-block w-12 h-1 bg-primary rounded-full mb-6" />
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground leading-tight">
             Stories of
@@ -44,7 +44,7 @@ export function Testimonials() {
         {/* Testimonials layout - featured + grid */}
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Featured testimonial */}
-          <div className="lg:row-span-2 bg-primary rounded-2xl md:rounded-3xl p-6 md:p-10 lg:p-12 text-primary-foreground relative overflow-hidden">
+          <div className="lg:row-span-2 bg-primary rounded-2xl p-6 md:p-9 lg:p-10 text-primary-foreground relative overflow-hidden">
             {/* Decorative shapes - hidden on mobile */}
             <div className="hidden md:block absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
             <div className="hidden md:block absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
@@ -77,7 +77,7 @@ export function Testimonials() {
           {testimonials.slice(1).map((testimonial) => (
             <div
               key={testimonial.author}
-              className="bg-card rounded-3xl p-8 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
+              className="bg-card rounded-2xl p-7 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-md"
             >
               {/* Rating stars */}
               <div className="flex gap-1 mb-6">
@@ -110,3 +110,4 @@ export function Testimonials() {
     </section>
   )
 }
+

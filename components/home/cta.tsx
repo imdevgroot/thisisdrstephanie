@@ -1,10 +1,10 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Heart } from "lucide-react"
 
 export function CTA() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-20 lg:py-28 relative overflow-hidden">
       {/* Split background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-foreground" />
@@ -108,3 +108,4 @@ export function CTA() {
     </section>
   )
 }
+

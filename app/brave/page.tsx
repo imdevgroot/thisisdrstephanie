@@ -1,4 +1,4 @@
-import { Header } from "@/components/header"
+﻿import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -136,7 +136,7 @@ export default function BravePage() {
             <span className="absolute top-1/2 right-[5%] font-serif text-8xl font-bold text-primary/5">E</span>
           </div>
 
-          <div className="relative mx-auto max-w-7xl px-6 lg:px-8 py-32">
+          <div className="relative w-full mx-auto max-w-7xl px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-20">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-8">
                 <Sparkles className="h-4 w-4" />
@@ -174,7 +174,7 @@ export default function BravePage() {
         </section>
 
         {/* Video Introduction */}
-        <section className="py-16 bg-card">
+        <section className="py-14 bg-card">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-8">
               <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-foreground">
@@ -198,7 +198,7 @@ export default function BravePage() {
         </section>
 
         {/* What's Inside */}
-        <section className="py-24 bg-card relative overflow-hidden">
+        <section className="py-20 lg:py-28 bg-card relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-accent/30 to-transparent" />
 
           <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
@@ -211,7 +211,7 @@ export default function BravePage() {
                   <span className="text-primary">Complete Transformation</span>
                 </h2>
                 <p className="mt-6 text-muted-foreground text-lg">
-                  The BRAVE Series is more than a course—it's a comprehensive journey
+                  The BRAVE Series is more than a courseâ€”it's a comprehensive journey
                   with all the tools and support you need.
                 </p>
               </div>
@@ -239,9 +239,9 @@ export default function BravePage() {
         </section>
 
         {/* Modules */}
-        <section id="modules" className="py-24 bg-background">
+        <section id="modules" className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="max-w-2xl mb-16">
+            <div className="max-w-2xl mb-12">
               <span className="inline-block w-12 h-1 bg-primary rounded-full mb-6" />
               <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-foreground">
                 The 5 <span className="text-primary">Modules</span>
@@ -255,7 +255,7 @@ export default function BravePage() {
               {modules.map((module, index) => (
                 <div
                   key={module.letter}
-                  className="group bg-card rounded-3xl p-8 lg:p-10 border border-border/50 hover:border-primary/20 transition-all duration-300"
+                  className="group bg-card rounded-2xl p-7 lg:p-9 border border-border/50 hover:border-primary/20 transition-all duration-300"
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                     {/* Letter badge */}
@@ -309,13 +309,13 @@ export default function BravePage() {
         </section>
 
         {/* Social Proof */}
-        <section className="py-24 bg-gradient-to-b from-accent/30 to-background relative overflow-hidden">
+        <section className="py-20 lg:py-28 bg-gradient-to-b from-accent/30 to-background relative overflow-hidden">
           <div className="hidden md:block absolute top-10 left-10 font-serif text-[10rem] lg:text-[15rem] text-primary/[0.02] leading-none select-none">
             "
           </div>
 
           <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <span className="inline-block w-12 h-1 bg-primary rounded-full mb-6" />
               <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-foreground">
                 What Others Are <span className="text-primary">Saying</span>
@@ -326,7 +326,7 @@ export default function BravePage() {
               {testimonials.map((testimonial) => (
                 <div
                   key={testimonial.author}
-                  className="bg-card rounded-3xl p-8 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
+                  className="bg-card rounded-2xl p-7 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-md"
                 >
                   {/* Stars */}
                   <div className="flex gap-1 mb-6">
@@ -342,7 +342,7 @@ export default function BravePage() {
                   </blockquote>
 
                   <p className="font-semibold text-foreground">
-                    — {testimonial.author}
+                    â€” {testimonial.author}
                   </p>
                 </div>
               ))}
@@ -351,7 +351,7 @@ export default function BravePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 relative overflow-hidden">
+        <section className="py-20 lg:py-28 relative overflow-hidden">
           <div className="absolute inset-0 bg-foreground" />
           <div className="hidden lg:block absolute top-0 right-0 w-1/3 h-full bg-primary" />
 
@@ -408,3 +408,4 @@ export default function BravePage() {
     </>
   )
 }
+

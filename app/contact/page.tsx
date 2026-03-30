@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import React from "react"
 import { Header } from "@/components/header"
@@ -106,7 +106,7 @@ export default function ContactPage() {
           <div className="hidden md:block absolute top-20 right-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
           <div className="hidden md:block absolute bottom-0 left-0 w-64 h-64 bg-accent rounded-full blur-2xl -translate-x-1/2 translate-y-1/2" />
 
-          <div className="relative mx-auto max-w-7xl px-6 lg:px-8 py-32">
+          <div className="relative w-full mx-auto max-w-7xl px-6 lg:px-8 pt-28 pb-14 lg:pt-32 lg:pb-16">
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-8">
                 <MessageCircle className="h-4 w-4" />
@@ -125,7 +125,7 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Form & Info */}
-        <section className="py-24 bg-card relative overflow-hidden">
+        <section className="py-20 lg:py-28 bg-card relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/20 to-transparent" />
 
           <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
@@ -133,7 +133,7 @@ export default function ContactPage() {
               {/* Form */}
               <div className="lg:col-span-7">
                 <span className="inline-block w-12 h-1 bg-primary rounded-full mb-6" />
-                <h2 className="font-serif text-2xl font-semibold text-foreground mb-8">
+                <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">
                   Send a Message
                 </h2>
 
@@ -169,7 +169,7 @@ export default function ContactPage() {
                             setFormData({ ...formData, name: e.target.value })
                           }
                           required
-                          className="rounded-xl border-border/50 focus:border-primary h-12"
+                          className="rounded-xl border-border/60 focus:border-primary h-12 bg-background"
                         />
                       </div>
                       <div className="space-y-2">
@@ -183,7 +183,7 @@ export default function ContactPage() {
                             setFormData({ ...formData, email: e.target.value })
                           }
                           required
-                          className="rounded-xl border-border/50 focus:border-primary h-12"
+                          className="rounded-xl border-border/60 focus:border-primary h-12 bg-background"
                         />
                       </div>
                     </div>
@@ -197,7 +197,7 @@ export default function ContactPage() {
                           setFormData({ ...formData, subject: e.target.value })
                         }
                         required
-                        className="rounded-xl border-border/50 focus:border-primary h-12"
+                        className="rounded-xl border-border/60 focus:border-primary h-12 bg-background"
                       />
                     </div>
                     <div className="space-y-2">
@@ -211,7 +211,7 @@ export default function ContactPage() {
                         }
                         required
                         rows={6}
-                        className="rounded-xl border-border/50 focus:border-primary resize-none"
+                        className="rounded-xl border-border/60 focus:border-primary resize-none bg-background"
                       />
                     </div>
 
@@ -239,7 +239,7 @@ export default function ContactPage() {
               <div className="lg:col-span-5 space-y-10">
                 <div>
                   <span className="inline-block w-12 h-1 bg-primary rounded-full mb-6" />
-                  <h2 className="font-serif text-2xl font-semibold text-foreground mb-8">
+                  <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">
                     Other Ways to Reach Me
                   </h2>
                   <div className="space-y-6">
@@ -286,7 +286,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="bg-primary text-primary-foreground rounded-2xl md:rounded-3xl p-6 md:p-8 relative overflow-hidden">
+                <div className="bg-primary text-primary-foreground rounded-2xl p-6 md:p-8 relative overflow-hidden">
                   <div className="hidden md:block absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
                   <div className="relative">
                     <h3 className="font-serif text-xl font-semibold mb-3">
@@ -306,9 +306,9 @@ export default function ContactPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-24 bg-background">
+        <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <span className="inline-block w-12 h-1 bg-primary rounded-full mb-6" />
               <h2 className="font-serif text-3xl font-semibold text-foreground">
                 Frequently Asked <span className="text-primary">Questions</span>
@@ -319,7 +319,7 @@ export default function ContactPage() {
               {faqs.map((faq, index) => (
                 <div
                   key={faq.question}
-                  className="bg-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-all"
+                  className="bg-card rounded-2xl p-5 md:p-6 border border-border/50 hover:border-primary/30 transition-all hover:shadow-sm"
                 >
                   <h3 className="font-semibold text-foreground mb-3 flex items-start gap-3 md:gap-4">
                     <span className="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 text-xs md:text-sm font-bold">
@@ -340,3 +340,4 @@ export default function ContactPage() {
     </>
   )
 }
+
