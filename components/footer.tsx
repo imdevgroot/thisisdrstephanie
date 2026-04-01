@@ -1,4 +1,4 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import { Instagram, Facebook, Youtube, Mail, ArrowUpRight } from "lucide-react"
 
 const navigation = {
@@ -118,15 +118,12 @@ export function Footer() {
             {new Date().getFullYear()} This Is Dr. Stephanie. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <Link href="#" className="hover:text-foreground transition-colors">
-              Privacy
-            </Link>
-            <Link href="#" className="hover:text-foreground transition-colors">
-              Terms
-            </Link>
+            <Link href="/privacy" className="hover:text-foreground transition-colors">Privacy</Link>
+            <Link href="/terms" className="hover:text-foreground transition-colors">Terms</Link>
           </div>
         </div>
       </div>
     </footer>
   )
 }
+

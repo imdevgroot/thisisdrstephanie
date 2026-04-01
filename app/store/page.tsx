@@ -1,4 +1,5 @@
-﻿import { Suspense } from "react"
+﻿import Image from "next/image"
+import { Suspense } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -223,12 +224,13 @@ export default function StorePage() {
                   key={resource.name}
                   className="bg-card rounded-2xl p-7 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-md"
                 >
-                  <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-4">
-                    {resource.type}
-                  </span>
-                  <h3 className="font-serif text-xl font-semibold text-foreground">
-                    {resource.name}
-                  </h3>
+                  {resource.name === "Finally Good Enough" && (
+                  <div className="w-full aspect-[3/4] rounded-xl overflow-hidden mb-4 max-h-48">
+                    <Image src="/book-finally-good-enough.png" alt="Finally Good Enough book cover" width={300} height={400} className="w-full h-full object-cover object-top" />
+                  </div>
+                )}
+                <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-4">{resource.type}</span>
+                <h3 className="font-serif text-xl font-semibold text-foreground">{resource.name}</h3>
                   <p className="text-muted-foreground text-sm mt-3">
                     {resource.description}
                   </p>
@@ -301,4 +303,5 @@ export default function StorePage() {
     </>
   )
 }
+
 
