@@ -60,7 +60,7 @@ export function Header() {
               Dr. Stephanie
             </span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground -mt-0.5">
-              Life Coach & Author
+              PhD, MSW — Life Coach & Author
             </span>
           </div>
         </Link>
@@ -131,3 +131,4 @@ export function Header() {
     </header>
   )
 }
+

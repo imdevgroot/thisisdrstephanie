@@ -10,7 +10,7 @@ import { getBraveData, getProducts } from "@/lib/data"
 
 export const metadata = {
   title: "Store | This Is Dr. Stephanie",
-  description: "Shop the BRAVE Series and faith-centered resources to help you live boldly in your purpose.",
+  description: "Resources by Stephanie Clark Rhoe, PhD, MSW — faith-centered programs to help you live boldly in your God-given purpose.",
 }
 
 const braveData = getBraveData()
@@ -303,5 +303,6 @@ export default function StorePage() {
     </>
   )
 }
+
 
 

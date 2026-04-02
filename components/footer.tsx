@@ -35,8 +35,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
-              Empowering women to live boldly through faith-centered coaching,
-              transformational resources, and a supportive community.
+              Stephanie Clark Rhoe, PhD, MSW — Faith-centered life coach, author, and SEL expert empowering women to live boldly in their calling.
             </p>
 
             {/* Newsletter signup hint */}
@@ -126,4 +125,5 @@ export function Footer() {
     </footer>
   )
 }
+
 

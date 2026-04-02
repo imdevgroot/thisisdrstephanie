@@ -150,8 +150,7 @@ export default function BravePage() {
               </h1>
 
               <p className="mt-8 text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                A transformational 5-module journey designed to help you break free from fear
-                and step boldly into your God-given purpose.
+                A transformational 5-module journey by Stephanie Clark Rhoe, PhD, MSW — designed to help you break free from fear and step boldly into your God-given purpose.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row items-start gap-4">
@@ -408,5 +407,6 @@ export default function BravePage() {
     </>
   )
 }
+
 
 

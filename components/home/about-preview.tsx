@@ -42,7 +42,7 @@ export function AboutPreview() {
             </h2>
 
             <p className="text-xs uppercase tracking-widest text-muted-foreground mt-3 mb-7">
-              Christian Life Coach, Expert & Author
+              Stephanie Clark Rhoe, PhD, MSW
             </p>
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -85,3 +85,4 @@ export function AboutPreview() {
     </section>
   )
 }
+

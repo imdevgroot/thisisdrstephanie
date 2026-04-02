@@ -77,8 +77,7 @@ export default function AboutPage() {
                   <span className="text-primary">Dr. Stephanie</span>
                 </h1>
                 <p className="mt-6 text-xl text-muted-foreground leading-relaxed">
-                  Christian Life Coach, Expert, and Author with over 30 years of experience
-                  helping individuals embrace self-acceptance and unlock their full potential.
+                  PhD, MSW — Faith-centered life coach, author, and SEL expert with over 30 years of experience empowering individuals to embrace self-acceptance and live boldly in their calling.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
@@ -144,29 +143,28 @@ export default function AboutPage() {
 
               <div className="lg:col-span-8 space-y-5 text-muted-foreground text-lg leading-relaxed">
                 <p className="text-xl text-foreground">
-                  With an incredible journey spanning over thirty years in governmental forensic mental health,
-                  clinical therapy, and the mental health fields, I've witnessed firsthand the unique challenges
-                  faced by individuals from all walks of life.
+                  Stephanie Clark Rhoe, PhD, MSW, is a woman of many passions and talents, with an incredible journey spanning over thirty years in governmental forensic mental health, clinical therapy, and the mental health fields. Throughout her career, she worked closely with struggling youth and their families, witnessing firsthand the unique challenges faced by those from low socioeconomic backgrounds and more.
                 </p>
                 <p>
-                  Throughout my career, I worked closely with struggling youth and their families,
-                  identifying a common thread among their challenges — the crucial need for social and emotional skills.
-                  This drove me to become a trailblazer advocating for public policy reform.
+                  She identified a common thread among these challenges — the crucial need for social and emotional skills. Driven by her experiences and observations, Dr. Clark Rhoe became a trailblazer advocating for public policy reform and addressing social and emotional learning in secondary education. Her doctoral studies in public policy and administration focused on political action and advocacy, paving the way for her remarkable career in social work.
                 </p>
                 <p>
-                  As a Social Emotional Learning (SEL) expert, I have touched countless lives, empowering
-                  individuals to embrace self-acceptance, set meaningful goals, and unlock their full potential.
-                  Beyond my professional achievements, I am also an accomplished author, Bible counselor, and teacher.
+                  As a Social Emotional Learning (SEL) expert, she has touched the lives of countless individuals, empowering them to embrace self-acceptance, set meaningful goals, and unlock their full potential. Beyond her professional achievements, Dr. Clark Rhoe is an accomplished author, Bible counselor, and teacher, impacting lives through her guidance and wisdom.
                 </p>
                 <p>
-                  My faith in Jesus Christ has grown and remains at the core of my worldview, infusing my work,
-                  volunteerism, and personal life with moral values and ethics drawn from{" "}
-                  <span className="text-foreground font-medium">the teachings of the Word of God.</span>
+                  Her faith in Jesus Christ has grown and remains at the core of her worldview, infusing her work, volunteerism, and personal life with moral values and ethics drawn from{" "}
+                  <span className="text-foreground font-medium">the teachings of the Word of God.</span>{" "}
+                  A Christian influencer, she excels in coaching women on leadership and discipleship, guiding others to find their voices and strengths.
                 </p>
                 <p>
-                  In the heart of Southern California, my husband and I reside, continuing to inspire others
-                  through our actions and unwavering faith. With five cherished grandchildren whom I describe
-                  as my pieces of Heaven on Earth, I remain a devoted wife, loving mother, and doting grandmother.
+                  Stephanie Clark Rhoe is more than her professional accolades — she is a devoted wife, loving mother, doting grandmother, and an inspiring leader. Despite her impressive achievements, she remains humble, viewing herself as a lifelong learner with an insatiable thirst for knowledge. Her creativity knows no bounds, finding solace and expression through fashion and jewelry design as a true graduate of FIDM in Los Angeles.
+                </p>
+                <p>
+                  While her expertise lies in serious matters, she knows the value of joy and relaxation — finding her happy place anywhere tropical, especially in beautiful Hawaii. Beyond her professional endeavors, she cherishes time in the kitchen whipping up gourmet dishes, and diverse hobbies including scuba diving, horseback riding, and creating unforgettable memories with her husband, adult children, their spouses, and five cherished grandchildren, whom she describes as her pieces of Heaven on Earth.
+                </p>
+                <p>
+                  In the heart of Southern California, Stephanie Clark Rhoe and her husband reside, continuing to inspire others through their actions and unwavering faith. With a captivating story and a life dedicated to helping others,{" "}
+                  <span className="text-foreground font-medium">Dr. Clark Rhoe is an extraordinary soul, leaving a lasting impact on the lives she touches.</span>
                 </p>
               </div>
             </div>
@@ -282,3 +280,4 @@ export default function AboutPage() {
     </>
   )
 }
+
