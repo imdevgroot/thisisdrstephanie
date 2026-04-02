@@ -38,7 +38,6 @@ export function VideoTeaser() {
                 playsInline
                 preload="metadata"
                 className="w-full h-full object-cover"
-                poster="/Headshot 1_edited_edited.avif"
               >
                 <source src="/videos/brave-intro.mp4" type="video/mp4" />
               </video>
@@ -50,3 +49,4 @@ export function VideoTeaser() {
     </section>
   )
 }
+

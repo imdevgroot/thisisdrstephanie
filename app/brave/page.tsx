@@ -187,7 +187,6 @@ export default function BravePage() {
               <video
                 controls
                 className="w-full aspect-video"
-                poster="/Headshot 1_edited_edited.avif"
               >
                 <source src="/videos/brave-intro.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -407,6 +406,7 @@ export default function BravePage() {
     </>
   )
 }
+
 
 
 
